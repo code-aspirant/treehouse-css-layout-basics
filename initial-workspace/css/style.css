@@ -1,0 +1,68 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+a { 
+	color: #fff;
+	text-decoration: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+* {
+	/* This forces the padding and borders into the width and height of the 
+	elements instead of expanding them. Prevents divs from having
+	 a width greater than the 70% that we defined */
+	box-sizing: border-box;
+}
+/* ---- Nav ---- */
+.name {
+	margin-top: 0;
+}
+
+/* ---- Layout Containers ---- */
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	background: #3acec2;
+	/* In order to remove the gap that is seen at the top
+	 where the h1 header is you must add some level of padding 
+	 to prevent the margin collapse that is happening with the header and the body. */
+	 padding: 1em 0;
+}
+
+.main-footer {
+	padding: 2em 0;
+	background: #d9e4ea;
+	text-align: center;
+}
+
+/* ---- Page Elements ---- */
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.wrap {
+		min-height: calc(100vh - 89px); /* Sticky footer solution. max view height - height of footer */
+		/* min-height: 100vh; sizing based on view height for the view port  this will cause a scrollbar*/
+	}
+
+	.container {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+}
