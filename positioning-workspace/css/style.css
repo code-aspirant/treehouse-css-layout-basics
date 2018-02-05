@@ -108,14 +108,12 @@ a {
 
 	/* This sets the nav style on larger screens */
 	.name,
-	.main-nav,
 	.main-nav li {
 		display: inline-block;
 	}
 
 	.name {
 		width: 240px;
-		margin-right: 50px;
 	}
 
 	.main-nav li {
