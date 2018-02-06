@@ -104,6 +104,29 @@ a {
 		margin: 0 auto;
 	}
 
+	.col {
+		float: left;
+		padding-right: 1em;
+	}
+
+	.col  + .col {
+		/* Adds left padding to all but the first col */
+		padding-left: 1em;
+	}
+
+	.col::last-child {
+		/* Removes padding from the last col */
+		padding-right: 0;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary {
+		width: 60%;
+	}
+
 	.feat-img {
 		width: 300px;
 		float: left;

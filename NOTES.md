@@ -65,3 +65,8 @@
     clear: both;
 }
 ```
+* Use inline-block when you need more control over the center and vertical alignment of your elements
+* Also use inline-block to lay out navigation items side by side or create simple two-column layouts
+* Use floats when you need content to go along the left or right side of an element
+* Floats do not need to deal with the default whitespace, but they do need to take collapsing parent element height into account
+    * Solve collapsing parent height issues with a clearfix
