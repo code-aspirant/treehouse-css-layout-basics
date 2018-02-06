@@ -81,6 +81,8 @@ img {
 /* ---- Layout Containers ---- */
 
 .banner {
+	padding: 50px;
+	text-align: center;
 	color: #fff;
 	background: #3acec2;
 }
