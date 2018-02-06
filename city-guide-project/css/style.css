@@ -106,7 +106,8 @@ img {
 @media (min-width: 769px) {
 
 	.container {
-		width: 95%;
+		width: 80%;
+		max-width: 1150px;
 		margin: 0 auto; /* Center content within */
 	}
 
