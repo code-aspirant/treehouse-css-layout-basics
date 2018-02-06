@@ -84,6 +84,10 @@
 * http://alistapart.com/article/css-positioning-101
 * https://css-tricks.com/almanac/properties/p/position/
 * https://developer.mozilla.org/en-US/docs/Web/CSS/top
+* https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+* https://philipwalton.com/articles/what-no-one-told-you-about-z-index/
+* https://css-tricks.com/almanac/properties/z/z-index/
 
 #### Absolute Positioning
 * Takes element out of the normal document flow
@@ -100,4 +104,25 @@
     * If not surrounded by another element then this is based on the browser viewport
 
 #### Relative Positioning
+* Setting offsets will move the element to where you want
+* Set a parent element as the positioning context for a child
 
+#### Fixed Positioning
+* Type of Absolute positioning
+* Positions elements in relation to the browser window
+* Stays fixed to one portion of the page regardless of the size of the browser window
+* Fixed headers and navigation bars are common
+
+#### z-index
+* Position elements follow a stacking order
+* The stacking order of positioned elements is defaulted by the order of the elements in the source code
+    * Elements later in the src will overlap those above
+![z-index](img/z-index-issue.png)
+    * You will see this using a fixed nav bar as positioned elements later in the src will overlap it
+* z-index only applies to positioned elements (those that have absolute, relative, or fixed positioning)
+* If you apply positioning to elements within a fixed nav then their z-index will be relative to that
+    * Fixed nav has z-index of 1000 and then the li elements within have positioning. Those elements will have a z-index context that starts at 1000
+
+### Wrap-Up
+* Build other pages of the Best City Guide website
+* Create a portfolio site using the Best City Guide layout
