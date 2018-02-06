@@ -57,15 +57,15 @@ a {
 	display: block;
 }
 
-	.main-nav a {
-		font-size: .95em;
-		color: #3acec2;
-		text-transform: uppercase;
-	}
-	
-	.main-nav a:hover {
-		color: #093a58;
-	}
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
 
 /* ---- Layout Containers ---- */
 

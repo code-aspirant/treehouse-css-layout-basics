@@ -50,7 +50,15 @@ img {
 /* ---- Navigation ---- */
 
 .name {
-	font-size: 1.25em;
+	font-size: 1.25em;	
+}
+
+.name,
+.main-nav,
+.main-nav li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 .name a,
@@ -96,19 +104,20 @@ img {
 @media (min-width: 769px) {
 
 	.container {
-		width: 80%;
-		max-width: 1150px;
+		width: 95%;
 		margin: 0 auto; /* Center content within */
 	}
 
-	.name,
-	.main-nav,
-	.main-nav li {
-		display: inline-block;
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
 	}
 
 	.main-nav li {
-		margin-right: -4px;
+		float: left;
 	}
 
 
