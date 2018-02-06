@@ -120,6 +120,7 @@
 ![z-index](img/z-index-issue.png)
     * You will see this using a fixed nav bar as positioned elements later in the src will overlap it
 * z-index only applies to positioned elements (those that have absolute, relative, or fixed positioning)
+* Positioned elements have a default z-index of 0
 * If you apply positioning to elements within a fixed nav then their z-index will be relative to that
     * Fixed nav has z-index of 1000 and then the li elements within have positioning. Those elements will have a z-index context that starts at 1000
 
