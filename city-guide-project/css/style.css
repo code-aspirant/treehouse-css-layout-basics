@@ -111,6 +111,19 @@ img {
 		margin: 0 auto; /* Center content within */
 	}
 
+	.col {
+		float: left;
+		padding-right: 1em;
+	}
+
+	.col + .col {
+		padding-left: 1em;
+	}
+
+	.col::last-child {
+		padding-right: 0;
+	}
+
 	.name {
 		float: left;
 	}
