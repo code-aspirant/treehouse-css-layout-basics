@@ -75,3 +75,29 @@
 * Use floats when you need content to go along the left or right side of an element
 * Floats do not need to deal with the default whitespace, but they do need to take collapsing parent element height into account
     * Solve collapsing parent height issues with a clearfix
+
+### Positioning Page Content
+* This will cover positioning using relative, absolute, and fixed positioning
+
+##### Resources
+* https://developer.mozilla.org/en-US/docs/Web/CSS/position
+* http://alistapart.com/article/css-positioning-101
+* https://css-tricks.com/almanac/properties/p/position/
+* https://developer.mozilla.org/en-US/docs/Web/CSS/top
+
+#### Absolute Positioning
+* Takes element out of the normal document flow
+* Positioning context is **always relative to the first parent element that has a relative position**
+* Other elements act as if this element is not even there
+* Elements with absolute positioning are not affected by or do not affect other elements in the normal flow of the page
+    * Somewhat like layers in photoshop
+    * Rely on the designer to position them properly
+* Offsets
+    * top, bottom, left, right
+    * These can take px, em, %, etc
+    * Used to position the absolute elements within the page
+* You place the absolute elements in relation to a parent container
+    * If not surrounded by another element then this is based on the browser viewport
+
+#### Relative Positioning
+
