@@ -144,6 +144,21 @@ figcaption {
 
 @media (min-width: 769px) {
 
+	body {
+		/* Compensate for the fixed positioning of the header nav */
+		padding-top: 68px;
+	}
+
+	.main-header {
+		/* Header will now only take up as much space as it's content */
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.4);
+		width: 100%;
+		/* Determine the fixed spot and ensure the header is anchored to the top of the browser */
+		top: 0;
+	}
+
 	.container {
 		width: 90%;
 		margin: 0 auto;
