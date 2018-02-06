@@ -40,6 +40,13 @@ img {
   Base Layout Styles
 ==================================== */
 
+/* ---- Containers ---- */
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
 /* ---- Navigation ---- */
 
 .name {
@@ -88,10 +95,20 @@ img {
 
 @media (min-width: 769px) {
 
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		margin: 0 auto; /* Center content within */
+	}
+
 	.name,
 	.main-nav,
 	.main-nav li {
 		display: inline-block;
+	}
+
+	.main-nav li {
+		margin-right: -4px;
 	}
 
 

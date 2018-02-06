@@ -22,6 +22,11 @@
 * You can put the opening and closing <li> tags on the same line but this is not recommended
 * Add a negative margin, this will remove the default white space
     * Note that element font size will affect how much negative margin you will need to apply
+```css
+.main-nav li {
+    margin-right: -4px;
+}
+```
 
 #### Floats
 * Similar to inline, but floated elements are taken out of the normal document flow
