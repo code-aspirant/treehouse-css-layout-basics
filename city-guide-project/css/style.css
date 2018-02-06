@@ -85,6 +85,11 @@ img {
 	text-align: center;
 	color: #fff;
 	background: #3acec2;
+	margin-bottom: 60px;
+}
+
+.headline {
+	margin-bottom: 0;
 }
 
 .main-footer {
@@ -104,14 +109,22 @@ img {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
 
-	.container {
-		width: 80%;
-		max-width: 1150px;
-		margin: 0 auto; /* Center content within */
+@media (min-width: 600px) and (max-width: 769px) {
+	.primary,
+	.secondary {
+		width: 50%;
 	}
 
+	.tertiary {
+		clear: both;
+		width: 100%;
+	}
+}
+
+@media (min-width: 769px) {
+
+	/* Padding is for the gutters */
 	.col {
 		float: left;
 		padding-right: 1em;
@@ -122,7 +135,16 @@ img {
 	}
 
 	.col::last-child {
+		/* Remove right padding from last col */
 		padding-right: 0;
+	}
+
+	.primary {
+		width: 50%;
+	}
+
+	.secondary {
+		width: 50%;
 	}
 
 	.name {
@@ -137,6 +159,10 @@ img {
 		float: left;
 	}
 
+	.feat-img {
+		padding: 10px;
+		border: solid 1px #d9e4ea;
+	}
 
 	/* ---- Float clearfix ---- */
 
@@ -145,5 +171,26 @@ img {
 		display: table;
 		clear: both;
 	}
+}
 
+@media (min-width: 1025px) {
+	
+	.container {
+		width: 80%;
+		max-width: 1150px;
+		margin: 0 auto; /* Center content within */
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary {
+		width: 30%;
+
+	}
+
+	.tertiary {
+		width: 30%;
+	}
 }
